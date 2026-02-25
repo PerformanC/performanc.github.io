@@ -1,0 +1,99 @@
+/* INFO: Color Pallete */
+:root {
+  --background: #141414;
+  --font: #fff;
+  --desc: #c9c9c9;
+  /* --bright: #8d1d19; */
+  --dim: #1c1c1c;
+  --dim-brigther: #3d3d3d;
+  --icon: #494949;
+  --icon-bc: #292929;
+  --small-card: var(--icon-bc);
+  --button: var(--background);
+  --button-enabled: #535353;
+  --desktop-navbar: #252525;
+  --desktop-navicon: #3a3a3a;
+
+  --lock: #fff;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--font);
+  background-color: var(--background);
+  font-family: "Google";
+}
+
+nav-constructor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  caret-color: transparent;
+}
+
+nav {
+  background: rgba(28, 28, 28, 0.7);
+  border-radius: 40px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  /* box-shadow: rgba(37, 37, 37, 0.2) 0px 2px 8px 0px; */
+  caret-color: transparent;
+
+  /* Blur test */
+  backdrop-filter: blur(10px);
+}
+
+nav-item {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  caret-color: transparent;
+}
+
+nav-item[checked] {
+  background-color: var(--dim-brigther);
+  caret-color: transparent;
+}
+
+hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  caret-color: transparent;
+}
+
+background {
+  aspect-ratio: 1 / 1;
+  background-image: url(/assets/performanc/logo.png);
+  height: calc(100vh - 20px);
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-right: 15px solid  var(--desc);
+  caret-color: transparent;
+}
+
+hero-content {
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 30px;
+  caret-color: transparent;
+}
+
+hero-desc {
+  word-break: break-all;
+  font-size: 30px;
+  caret-color: transparent;
+}
