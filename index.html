@@ -5,29 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PerfomanC</title>
-    <meta name="description" content="For a more transparent world. Por um mundo mais transparente">
+    <meta name="description" content="Working for the best of the future">
     <meta name="robots" content="index, follow">
     <meta http-equiv="content-language" content="en">
     <meta name="author" content="PerformanC">
     <!-- INFO: Open Graph Metadata -->
     <meta property="og:title" content="PerfomanC">
-    <meta property="og:description" content="For a more transparent world. Por um mundo mais transparente">
-    <!-- <meta property="og:image" content="https://deepinrain.github.io/assets/favicon.img"> -->
+    <meta property="og:description" content="Working for the best of the future">
+    <meta property="og:image" content="https://performanc.org/assets/performanc/logo.png">
     <meta property="og:url" content="https://performanc.org/">
     <meta property="og:type" content="website">
     <!-- INFO: Twitter Card Metadata -->
     <meta name="twitter:title" content="PerfomanC">
-    <meta name="twitter:description" content="For a more transparent world. Por um mundo mais transparente">
-    <!-- <meta name="twitter:image" content="https://deepinrain.github.io/assets/favicon.img"> -->
+    <meta name="twitter:description" content="Working for the best of the future">
+    <meta name="twitter:image" content="https://performanc.org/assets/performanc/logo.png">
     <!--INFO: Links -->
+    <link rel="icon" type="image/png" href="/assets/performanc/favicon.png">
     <link rel="canonical" href="https://performanc.org/">
-    <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/assets/fonts/index.css" />
+    <link rel="stylesheet" href="/global/css/gui-toolkit.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- INFO: Scripts -->
+    <script type="module" src="index.js"></script>
   </head>
   <body>
+    <div id="menu">
+      <menu-modal>
+        <menu-modal-header>What do you need?</menu-modal-header>
+        <menu-modal-item>About Us</menu-modal-item>
+        <menu-modal-item>History</menu-modal-item>
+        <menu-modal-item>Projects</menu-modal-item>
+        <menu-modal-item>Member</menu-modal-item>
+        <menu-modal-item>Social Media</menu-modal-item>
+        <menu-modal-item id="menu-close-button">Close</menu-modal-item>
+      </menu-modal>
+    </div>
+
     <nav-constructor>
-      <nav>
-        <nav-item checked>About Us</nav-item>
+      <nav id="nav-brand" style="margin-right: 15px;">
+        <nav-item class="icon"></nav-item>
+        <nav-item id="menu-button" logo-checked>PerformanC</nav-item>
+      </nav>
+      <nav id="nav-button">
+        <nav-item>About Us</nav-item>
         <nav-item>History</nav-item>
         <nav-item>Projects</nav-item>
         <nav-item>Member</nav-item>
@@ -35,12 +54,40 @@
       </nav>
     </nav-constructor>
 
-    <hero>
-      <background></background>
-      <hero-content>
-        <h1 style="font-size: 7em; margin-bottom: 5px;">PerformanC</h1>
-        <hero-desc>For a more transparent world.<br>Por um mundo mais transparente.</hero-desc>
-      </hero-content>
-    </hero>
+    <background>
+      <background-circle class="circle-1 depth-far"></background-circle>
+      <background-circle class="circle-2 depth-mid"></background-circle>
+      <background-circle class="circle-3 depth-near"></background-circle>
+      <background-circle class="circle-4 depth-far"></background-circle>
+      <background-circle class="circle-5 depth-mid"></background-circle>
+      <background-circle class="circle-6 depth-near"></background-circle>
+      <background-circle class="circle-7 depth-far"></background-circle>
+      <background-circle class="circle-8 depth-mid"></background-circle>
+      <background-circle class="circle-9 depth-near"></background-circle>
+      <background-circle class="circle-10 depth-far"></background-circle>
+      <background-circle class="circle-11 depth-mid"></background-circle>
+      <background-circle class="circle-12 depth-near"></background-circle>
+      <background-circle class="circle-13 depth-far"></background-circle>
+    </background>
+
+    <div id="home">
+      <hero-section>
+        <hero-content>
+          <h1 class="hero-header">Workforce towards the commonwealth</h1>
+          <p style="font-size: 20px;">
+            Empowering a workforce for the commonwealth, 
+            we build systems rooted in transparency, trust, and shared purpose. 
+            By opening access and fostering accountability, 
+            we help create a more connected, equitable world where progress is shared by all.
+          </p>
+        </hero-content>
+      </hero-section>
+    </div>
+
+    <footer>
+      <a id="copyright_notice" href="/LICENSE" target="_blank"></a>
+      <br>
+      <a href="/assets/NOTICE.md" target="_blank">Assets used in <b>/assets/performanc</b> is licensed under the "CC BY-NC-ND 4.0" License </a>
+    </footer>
   </body>
 </html>
