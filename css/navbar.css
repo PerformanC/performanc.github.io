@@ -29,6 +29,17 @@ nav-item {
   background-color: var(--dim-brighter);
 } */
 
+.icon {
+  background-image: url(/assets/performanc/favicon.png);
+  display: block;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--bright);
+}
+
 nav-item[logo-checked] {
   background-color: var(--bright);
   backdrop-filter: blur(10px);

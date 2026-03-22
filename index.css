@@ -17,16 +17,6 @@ hero-content {
   margin-left: 40px;
 }
 
-.icon {
-  background-image: url(/assets/performanc/favicon.png);
-  display: block;
-  aspect-ratio: 1 / 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-}
-
 footer {
   background-color: var(--dim);
   opacity: 1;
