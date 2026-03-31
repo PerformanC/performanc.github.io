@@ -7,8 +7,14 @@ copyright_notice_element.innerHTML = `© ${year} PerformanC Website — Licensed
 let isOpen = false
 
 const nav_brand_button = document.getElementById('nav-brand')
-const menu_close_button = document.getElementById('menu-close-button')
 const menu = document.getElementById('menu')
+const mmi_can_close = document.getElementsByClassName('mmi-can-close')
+
+menu.addEventListener('click', () => {
+  if (!isOpen) return;
+  menu.classList.remove('open')
+  isOpen = false
+})
 
 nav_brand_button.addEventListener('click', () => {
   if (!window.matchMedia('(max-width: 1000px)').matches) return;
@@ -21,8 +27,11 @@ nav_brand_button.addEventListener('click', () => {
   }
 })
 
-menu_close_button.addEventListener('click', () => {
-  if (!isOpen) return;
-  menu.classList.remove('open')
-  isOpen = false
-})
+for (let i = 0; i < mmi_can_close.length; i++) {
+  const element = mmi_can_close[i];
+  element.addEventListener('click', () => {
+    if (!isOpen) return;
+    menu.classList.remove('open')
+    isOpen = false
+  })
+}
