@@ -2,8 +2,8 @@ nav-constructor {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 0;
-  left: 30px;
+  top: 30px;
+  left: 40px;
   right: 0;
 }
 
@@ -11,7 +11,6 @@ nav {
   background: rgba(28, 28, 28, 0.7);
   border-radius: 40px;
   display: flex;
-  margin-top: 20px;
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(10px);
@@ -19,7 +18,7 @@ nav {
 
 nav-item {
   margin: 10px;
-  padding: 12px;
+  padding: 13px;
   border-radius: 30px;
   cursor: pointer;
   background-color: var(--dim-bright);
@@ -48,6 +47,14 @@ nav-item[logo-checked] {
 }
 
 @media (max-width: 1000px) {
+  nav-constructor {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    right: 0;
+  }
   #nav-button {
     display: none;
   }
