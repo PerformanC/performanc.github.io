@@ -21,7 +21,6 @@ nav-item {
   padding: 13px;
   border-radius: 30px;
   cursor: pointer;
-  background-color: var(--dim-bright);
 }
 
 /* nav-item[checked] {
