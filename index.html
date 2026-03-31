@@ -20,18 +20,18 @@
     <meta name="twitter:description" content="Working for the best of the future">
     <meta name="twitter:image" content="https://performanc.org/assets/performanc/logo.png">
     <!--INFO: Links -->
-    <link rel="icon" type="image/png" href="assets/performanc/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/performanc/favicon.png">
     <link rel="canonical" href="https://performanc.org/">
-    <link rel="stylesheet" href="global/css/gui-toolkit.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/global/css/gui-toolkit.css" />
+    <link rel="stylesheet" href="/index.css" />
     <!-- INFO: Scripts -->
-    <script type="module" src="index.js"></script>
+    <script type="module" src="/index.js"></script>
   </head>
   <body>
     <div id="menu">
       <menu-modal>
         <menu-modal-header>What do you need?</menu-modal-header>
-        <a class="menu-modal-item mmi-can-close" href="#home" >About Us</a>
+        <a class="menu-modal-item mmi-can-close" href="/" >Home</a>
         <a class="menu-modal-item mmi-can-close" href="#history">History</a>
         <a class="menu-modal-item mmi-can-close">Projects</a>
         <a class="menu-modal-item mmi-can-close">Member</a>
@@ -41,9 +41,10 @@
     </div>
 
     <nav-constructor>
-      <nav id="nav-brand" style="margin-right: 15px;">
-        <nav-item class="icon"></nav-item>
-        <nav-item logo-checked>PerformanC</nav-item>
+      <nav id="nav-brand">
+        <a href="/"><nav-item class="icon"></nav-item></a>
+        <a href="/"><nav-item id="nav-brand-name">PerformanC</nav-item></a>
+        <nav-item id="nav-menu-button" logo-checked>Menu</nav-item>
       </nav>
       <nav id="nav-button">
         <a href="#home"><nav-item>Home</nav-item></a>

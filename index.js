@@ -6,20 +6,11 @@ copyright_notice_element.innerHTML = `© ${year} PerformanC Website — Licensed
 // INFO: Mobile Menu Handler
 let isOpen = false
 
-const nav_brand_button = document.getElementById('nav-brand')
+const nav_menu_button = document.getElementById('nav-menu-button')
 const menu = document.getElementById('menu')
 const mmi_can_close = document.getElementsByClassName('mmi-can-close')
 
-menu.addEventListener('click', () => {
-  if (!isOpen) return;
-  menu.classList.remove('open')
-  isOpen = false
-})
-
-nav_brand_button.addEventListener('click', () => {
-  if (!window.matchMedia('(max-width: 1000px)').matches) {
-    window.location.href = '/'
-  }
+nav_menu_button.addEventListener('click', () => {
   if (!isOpen) {
     menu.classList.add('open')
     isOpen = true
@@ -27,6 +18,12 @@ nav_brand_button.addEventListener('click', () => {
     menu.classList.remove('open')
     isOpen = false
   }
+})
+
+menu.addEventListener('click', () => {
+  if (!isOpen) return;
+  menu.classList.remove('open')
+  isOpen = false
 })
 
 for (let i = 0; i < mmi_can_close.length; i++) {

@@ -23,12 +23,8 @@ nav-item {
   cursor: pointer;
 }
 
-/* nav-item[checked] {
-  background-color: var(--dim-brighter);
-} */
-
 .icon {
-  background-image: url(../assets/performanc/favicon.png);
+  background-image: url(/assets/performanc/favicon.png);
   display: block;
   aspect-ratio: 1 / 1;
   background-size: cover;
@@ -45,6 +41,20 @@ nav-item[logo-checked] {
   font-size: 18px;
 }
 
+#nav-brand {
+  margin-right: 20px;
+}
+
+#nav-brand-name {
+  background-color: var(--bright);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nav-menu-button {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   nav-constructor {
     display: flex;
@@ -59,10 +69,26 @@ nav-item[logo-checked] {
   }
 
   nav-constructor {
-    left: 20px;
+    left: 0px;
+    right: 0px;
   }
 
   nav {
     scale: 0.9;
+  }
+
+  #nav-brand {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #nav-brand-name {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--dim-brighter);
+  }
+
+  #nav-menu-button {
+    display: block;
   }
 }

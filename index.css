@@ -1,5 +1,5 @@
-@import url(css/background.css);
-@import url(css/navbar.css);
+@import url(/css/background.css);
+@import url(/css/navbar.css);
 
 #home {
   display: block;
@@ -21,9 +21,7 @@ hero-content {
 footer {
   background-color: var(--dim);
   opacity: 1;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding: 30px;
 }
 
 .hero-header {
