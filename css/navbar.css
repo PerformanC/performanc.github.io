@@ -85,6 +85,7 @@ nav-item[logo-checked] {
   #nav-brand-name {
     font-weight: bold;
     font-size: 18px;
+    background-color: initial;
   }
 
   #nav-menu-button {
