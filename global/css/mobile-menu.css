@@ -41,7 +41,7 @@ menu-modal-header {
   margin-left: 10px;
 }
 
-menu-modal-item {
+.menu-modal-item {
   border-radius: 30px;
   background-color: var(--dim-bright);
   padding: 20px;

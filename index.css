@@ -51,7 +51,6 @@ timeline {
 timeline-part {
   display: flex;
   flex-direction: column;
-  
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -136,8 +135,24 @@ hero-content[type="history"] {
     display: flex;
     flex-direction: column;
     border-left: 5px solid var(--font);
-    margin-left: 15px;
+    margin-left: 10px;
     width: fit-content;
     margin-bottom: 50px;
+  }
+
+  timeline-part {
+    margin-left: 20px;
+  }
+
+
+  timeline-part-header {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  timeline-part-desc {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }
