@@ -29,7 +29,7 @@ nav-item {
 } */
 
 .icon {
-  background-image: url(./../assets/performanc/favicon.png);
+  background-image: url(../assets/performanc/favicon.png);
   display: block;
   aspect-ratio: 1 / 1;
   background-size: cover;
