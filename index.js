@@ -17,7 +17,9 @@ menu.addEventListener('click', () => {
 })
 
 nav_brand_button.addEventListener('click', () => {
-  if (!window.matchMedia('(max-width: 1000px)').matches) return;
+  if (!window.matchMedia('(max-width: 1000px)').matches) {
+    window.location.href = '/'
+  }
   if (!isOpen) {
     menu.classList.add('open')
     isOpen = true
