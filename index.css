@@ -90,6 +90,12 @@ hero-content[type="history"] {
   width: 70%
 }
 
+.hero-header[type="history"] {
+  font-size: 50px;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
 @media (max-width: 1000px) {
   hero-content {
     width: 100%;
@@ -120,5 +126,18 @@ hero-content[type="history"] {
     font-size: 30px;
     margin-bottom: 20px;
     letter-spacing: -0.02em;
+  }
+
+  .hero-header[type="history"] {
+    font-size: 40px;
+  }
+
+  timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid var(--font);
+    margin-left: 15px;
+    width: fit-content;
+    margin-bottom: 50px;
   }
 }
