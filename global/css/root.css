@@ -29,6 +29,7 @@ body {
   background-color: var(--background);
   font-family: "Google";
   width: 100%;
+  font-feature-settings: "kern";
 }
 
 html {
