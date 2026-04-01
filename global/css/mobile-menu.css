@@ -25,28 +25,21 @@
 
 menu-modal {
   background-color: var(--dim);
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   border-radius: 30px;
-  width: 30vw;
+  max-width: 350px;
+  width: 65vw;
   display: flex;
   flex-direction: column;
-}
-
-menu-modal-header {
-  font-size: 25px;
-  margin-bottom: 15px;
-  margin-left: 10px;
 }
 
 .menu-modal-item {
   border-radius: 30px;
   background-color: var(--dim-bright);
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 17px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
   text-align: center;
   cursor: pointer;
 }
@@ -60,10 +53,6 @@ menu-modal-header {
     width: 100%;
     margin-left: 40px;
     margin-right: 40px;
-  }
-
-  menu-modal {
-    width: 70vw;
   }
 
   .hero-header {

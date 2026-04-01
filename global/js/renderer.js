@@ -3,7 +3,6 @@ const body = document.getElementsByTagName('body')[0]
 const header = `
   <div id="menu">
     <menu-modal>
-      <menu-modal-header>What do you need?</menu-modal-header>
       <a class="menu-modal-item mmi-can-close" href="#">Home</a>
       <a class="menu-modal-item mmi-can-close" href="#history">History</a>
       <a class="menu-modal-item mmi-can-close">Projects</a>
