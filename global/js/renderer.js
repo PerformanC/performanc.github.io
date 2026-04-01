@@ -34,7 +34,7 @@ const footer = `
   <footer id="footer">
     <a id="copyright_notice" href="/LICENSE" target="_blank"></a>
     <br>
-    <a href="/assets/NOTICE.md" target="_blank">Assets used in <b>/assets/performanc</b> is licensed under the "CC BY-NC-ND 4.0" License </a>
+    <a href="/assets/NOTICE.md" target="_blank">Assets used in <b>/assets/performanc</b> are licensed under the "CC BY-NC-ND 4.0" License </a>
   </footer>
 `
 
