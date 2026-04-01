@@ -24,7 +24,6 @@ footer {
 .hero-header {
   font-size: 60px;
   margin-bottom: 20px;
-  letter-spacing: -0.02em;
 }
 
 #history {
@@ -87,7 +86,6 @@ hero-content[type="history"] {
 .hero-header[type="history"] {
   font-size: 50px;
   margin-bottom: 10px;
-  letter-spacing: -0.02em;
 }
 
 @media (max-width: 1000px) {
@@ -119,7 +117,6 @@ hero-content[type="history"] {
   .hero-header {
     font-size: 30px;
     margin-bottom: 20px;
-    letter-spacing: -0.02em;
   }
 
   .hero-header[type="history"] {
