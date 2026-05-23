@@ -303,6 +303,14 @@ footer {
       0px -50px 0px 0px rgba(36, 36, 36, 0.3), 
       0px -60px 50px -23px rgba(36, 36, 36, 0.2);
   }
+
+  members-card[type="pedro"] {
+    background-size: 100%;
+    background-position: top center;
+    background-image: 
+      linear-gradient(var(--dim-blur), var(--dim-blur)), 
+      url(./assets/performanc/perfc_mod.svg);
+  }
 }
 
 @media (min-width: 1000px) {
