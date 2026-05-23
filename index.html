@@ -4,7 +4,7 @@
     <!-- INFO: Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PerfomanC</title>
+    <title>PerformanC</title>
     <meta name="description" content="Working for the best of the future">
     <meta name="robots" content="index, follow">
     <meta http-equiv="content-language" content="en">
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="/global/css/gui-toolkit.css" />
     <link rel="stylesheet" href="/index.css" />
     <!-- INFO: Scripts -->
-    <script src="/global/js/renderer.js" type="module"></script>
     <script type="module" src="/index.js"></script>
   </head>
   <body>
@@ -45,6 +44,34 @@
       <background-circle class="circle-13 depth-far"></background-circle>
     </background>
 
+    <div id="menu">
+      <menu-modal>
+        <a class="menu-modal-item mmi-can-close" href="#">Home</a>
+        <a class="menu-modal-item mmi-can-close" href="#history">History</a>
+        <a class="menu-modal-item mmi-can-close" href="#projects">Projects</a>
+        <a class="menu-modal-item mmi-can-close" href="#members">Member</a>
+        <a class="menu-modal-item mmi-can-close" href="#social_media">Social Media</a>
+        <a class="menu-modal-item mmi-can-close" id="menu-close-button">Close</a>
+      </menu-modal>
+    </div>
+
+    <nav-constructor>
+      <nav id="nav-brand">
+        <a href="#"><nav-item class="icon"></nav-item></a>
+        <a href="#"><nav-item id="nav-brand-name">PerformanC</nav-item></a>
+        <nav-item id="nav-menu-button" logo-checked>
+          <menu-icon></menu-icon>
+        </nav-item>
+      </nav>
+      <nav id="nav-button">
+        <a href="#">Home</a>
+        <a href="#history">History</a>
+        <a href="#projects">Projects</a>
+        <a href="#members">Members</a>
+        <a href="#social_media">Social Media</a>
+      </nav>
+    </nav-constructor>
+
     <div id="home">
       <hero-section>
         <hero-content>
@@ -60,65 +87,158 @@
     </div>
 
     <div id="history">
-      <hero-section>
-        <hero-content type="history">
-          <h1 class="hero-header" type="history">Our History</h1>
-          <timeline>
-            <timeline-part style="margin-top: 15px;">
-              <timeline-part-header>2022 — Foundation</timeline-part-header>
-              <timeline-part-desc>
-                Born in the aftermath of the COVID-19 pandemic, The PerformanC Organization (TPO) was established with a clear vision:
-                to build and publish high-quality software that prioritizes performance, efficiency, and minimal resource usage.
-              </timeline-part-desc>
-              <timeline-part-desc>
-                From the very beginning, the organization committed to something deeper than just code, 
-                transparency, and accountability at every step of development.
-              </timeline-part-desc>
-            </timeline-part>
-
-            <timeline-part>
-              <timeline-part-header>First Release — CogLink</timeline-part-header>
-              <timeline-part-desc>The first project released under the organization marked its technical direction.</timeline-part-desc>
-              <timeline-part-desc>
-                CogLink, a LavaLink client written in C99, became the foundation of PerformanC’s identity—
-                lean, efficient, and engineered with precision.
-              </timeline-part-desc>
-            </timeline-part>
-
-            <timeline-part>
-              <timeline-part-header>Growth — Expanding the Ecosystem</timeline-part-header>
-              <timeline-part-desc>As time progressed, PerformanC continued to grow beyond its initial scope.</timeline-part-desc>
-              <timeline-part-desc>More projects were developed and released, each carrying the same philosophy:</timeline-part-desc>
-              <timeline-part-desc>
-                <ul>
-                  <li>performance-first design</li>
-                  <li>clean and reliable implementation</li>
-                  <li>practical value for real-world use</li>
-                </ul>
-              </timeline-part-desc>
-              <timeline-part-desc>
-                Some of these projects began gaining traction, gradually building recognition within the community.
-              </timeline-part-desc>
-            </timeline-part>
-
-            <timeline-part style="margin-bottom: 0;">
-              <timeline-part-header>Today — A Global Effort</timeline-part-header>
-              <timeline-part-desc>Today, PerformanC stands as a collaborative effort formed by:</timeline-part-desc>
-              <timeline-part-desc>
-                <a href="https://github.com/1Lucas1apk" target="_blank">Lucas</a>, 
-                <a href="https://deeplunaria.pages.dev/rainyxeon/" target="_blank">Rainy</a>, 
-                <a href="https://github.com/TehPig" target="_blank">TehPig</a>, 
-                <a href="https://github.com/ThePedroo" target="_blank">ThePedroo</a>, and 
-                <a href="https://github.com/TheToddyn" target="_blank">Nicolas</a>
-              </timeline-part-desc>
-              <timeline-part-desc>
-                With 10+ active projects, the organization delivers high-standard 
-                software used by individuals and other projects across the globe.
-              </timeline-part-desc>
-            </timeline-part>
-          </timeline>   
-        </hero-content>
-      </hero-section>
+      <h2 class="hero-header" type="history">Our History</h2>
+      <timeline>
+        <timeline-section style="margin-top: 15px;">
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>2022 — Foundation</timeline-block-header>
+            <timeline-block-desc>
+              Born in the aftermath of the COVID-19 pandemic, The PerformanC Organization (TPO) was established with a clear vision:
+              to build and publish high-quality software that prioritizes performance, efficiency, and minimal resource usage.
+            </timeline-block-desc>
+            <timeline-block-desc>
+              From the very beginning, the organization committed to something deeper than just code, 
+              transparency, and accountability at every step of development.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+        <timeline-section>
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>First Release — CogLink</timeline-block-header>
+            <timeline-block-desc>The first project released under the organization marked its technical direction.</timeline-block-desc>
+            <timeline-block-desc>
+              CogLink, a LavaLink client written in C99, became the foundation of PerformanC’s identity—
+              lean, efficient, and engineered with precision.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+        <timeline-section>
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>Growth — Expanding the Ecosystem</timeline-block-header>
+            <timeline-block-desc>As time progressed, PerformanC continued to grow beyond its initial scope.</timeline-block-desc>
+            <timeline-block-desc>More projects were developed and released, each carrying the same philosophy:</timeline-block-desc>
+            <timeline-block-desc>
+              <ul>
+                <li>performance-first design</li>
+                <li>clean and reliable implementation</li>
+                <li>practical value for real-world use</li>
+              </ul>
+            </timeline-block-desc>
+            <timeline-block-desc>
+              Some of these projects began gaining traction, gradually building recognition within the community.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+        <timeline-section style="margin-bottom: 0;">
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>Today — A Global Effort</timeline-block-header>
+            <timeline-block-desc>Today, PerformanC stands as a collaborative effort formed by:</timeline-block-desc>
+            <timeline-block-desc>
+              <a href="https://github.com/1Lucas1apk" target="_blank">Lucas</a>, 
+              <a href="https://deeplunaria.pages.dev/rainyxeon/" target="_blank">Rainy</a>, 
+              <a href="https://github.com/TehPig" target="_blank">TehPig</a>, 
+              <a href="https://github.com/ThePedroo" target="_blank">ThePedroo</a>, and 
+              <a href="https://github.com/TheToddyn" target="_blank">Nicolas</a>
+            </timeline-block-desc>
+            <timeline-block-desc>
+              With 10+ active projects, the organization delivers high-standard 
+              software used by individuals and other projects across the globe.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+      </timeline>
     </div>
+
+    <div id="members">
+      <h2 class="hero-header" type="members">Our Members</h2>
+      <members-list>
+        <members-card type="pedro">
+          <members-card-wrapper>
+            <members-card-header>ThePedroo</members-card-header>
+            <members-card-desc>
+              Howdy, I am a 17-year-old boy from Brazil. 
+              I have been into programming since I was 11 years old, 
+              beginning with JavaScript (Node.js).
+            </members-card-desc>
+            <members-card-social-media>
+              <a href="https://github.com/ThePedroo" target="_blank"><github-icon></github-icon></a>
+              <a href="https://discord.gg/uPveNfTuCJ" target="_blank"><discord-icon></discord-icon></a>
+              <a href="https://t.me/performancorg" target="_blank"><telegram-icon></telegram-icon></a>
+            </members-card-social-media>
+          </members-card-wrapper>
+        </members-card>
+
+        <members-card type="rainy">
+          <members-card-wrapper>
+            <members-card-header>RainyXeon</members-card-header>
+            <members-card-desc>
+              I'm RainyXeon (just call me Rainy), a full-stack developer from Vietnam. 
+              I started my coding journey in the mid-2020s with one dream: 
+              to build and share useful open-source tools.
+            </members-card-desc>
+            <members-card-social-media>
+              <a href="https://github.com/RainyXeon" target="_blank"><github-icon></github-icon></a>
+              <a href="https://discord.gg/kwEmpMExmv" target="_blank"><discord-icon></discord-icon></a>
+              <a href="https://t.me/DeepLunaria" target="_blank"><telegram-icon></telegram-icon></a>
+              <a href="https://bsky.app/profile/rainyxeon.bsky.social" target="_blank"><bluesky-icon></bluesky-icon></a>
+            </members-card-social-media>
+          </members-card-wrapper>
+        </members-card>
+
+        <members-card type="lucas">
+          <members-card-wrapper>
+            <members-card-header>1Lucas1apk</members-card-header>
+            <members-card-desc>
+              Hi! I'm Lucas Morais Rodrigues (a.k.a. 1Lucas1apk), born on 03/06. At 18, 
+              I'm a curious and creative soul with a passion for solving problems, 
+              building meaningful projects, and constantly exploring new horizons—both in tech and life.
+            </members-card-desc>
+            <members-card-social-media>
+              <a href="https://github.com/1Lucas1apk" target="_blank"><github-icon></github-icon></a>
+              <a href="https://discord.gg/fzjksWS65v" target="_blank"><discord-icon></discord-icon></a>
+            </members-card-social-media>
+          </members-card-wrapper>
+        </members-card>
+
+        <members-card type="default">
+          <members-card-wrapper>
+            <members-card-header>Nicolas De Sá (TheToddyn)</members-card-header>
+            <members-card-desc>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Duis placerat, lorem id iaculis cursus, est arcu congue mauris, 
+              ut tincidunt lectus lorem et nisi. Ut varius cursus interdum. 
+            </members-card-desc>
+            <members-card-social-media>
+              <a href="https://github.com/TheToddyn" target="_blank"><github-icon></github-icon></a>
+            </members-card-social-media>
+          </members-card-wrapper>
+        </members-card>
+
+        <members-card type="default">
+          <members-card-wrapper>
+            <members-card-header>TehPig</members-card-header>
+            <members-card-desc>
+              Hi , I'm TehPig. I am currently working on APIs and mostly JavaScript projects. 
+              I own 2 Verified Discord Bots, [T_Moderator_Bot] (180+ servers) and [T_Music_Bot] (2.5k+ servers), 
+              serving users daily with new features implemented every once in a while!
+            </members-card-desc>
+            <members-card-social-media>
+              <a href="https://github.com/TehPig" target="_blank"><github-icon></github-icon></a>
+              <a href="https://bsky.app/profile/techpig.tehcraft.xyz" target="_blank"><bluesky-icon></bluesky-icon></a>
+            </members-card-social-media>
+          </members-card-wrapper>
+        </members-card>
+      </members-list>
+    </div>
+
+    <footer id="footer">
+      <a id="copyright_notice" href="/LICENSE" target="_blank"></a>
+      <br>
+      <a href="/assets/NOTICE.md" target="_blank">Assets used in <b>/assets/performanc</b> are licensed under the "CC BY-NC-ND 4.0" License </a>
+    </footer>
   </body>
 </html>

@@ -5,18 +5,26 @@ nav-constructor {
   top: 30px;
   left: 40px;
   right: 0;
+  z-index: 20;
 }
 
 nav {
-  background: rgba(36, 36, 36, 0.7);
   border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: var(--dim-blur);
   backdrop-filter: blur(10px);
 }
 
 nav-item {
+  margin: 10px;
+  padding: 13px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+nav[id="nav-button"] a {
   margin: 10px;
   padding: 13px;
   border-radius: 30px;

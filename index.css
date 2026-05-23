@@ -1,3 +1,4 @@
+/* INFO: Home Section */
 #home {
   display: block;
   height: 100vh;
@@ -15,22 +16,18 @@ hero-content {
   margin-left: 10px;
 }
 
-footer {
-  background-color: var(--dim);
-  opacity: 1;
-  padding: 30px;
-}
-
 .hero-header {
   font-size: 60px;
   margin-bottom: 20px;
 }
 
+/* INFO: History Section */
 #history {
   display: block;
   margin-left: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 70%;
 }
 
 timeline {
@@ -38,49 +35,65 @@ timeline {
   flex-direction: column;
   border-left: 5px solid var(--font);
   margin-left: 30px;
-  width: fit-content;
   margin-bottom: 50px;
+  row-gap: 30px;
+  width: 100%;
 }
 
-timeline-part {
+timeline-section {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: -10px;
+  column-gap: 30px;
+}
+
+timeline-dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--font);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+timeline-block {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background: var(--dim-blur);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 25px;
+  width: 100%;
 }
 
-timeline-part-header {
+timeline-block-header {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-timeline-part-desc {
+timeline-block-desc {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-timeline-part-desc ul {
+timeline-block-desc ul {
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
 }
 
-timeline-part-desc li {
+timeline-block-desc li {
   margin-top: 3px;
   margin-bottom: 3px;
 }
 
-timeline-part-desc a:link,
-timeline-part-desc a:visited,
-timeline-part-desc a:hover,
-timeline-part-desc a:active {
+timeline-block-desc a:link,
+timeline-block-desc a:visited,
+timeline-block-desc a:hover,
+timeline-block-desc a:active {
   text-decoration: underline;
-}
-
-hero-content[type="history"] {
-  width: 70%
 }
 
 .hero-header[type="history"] {
@@ -88,25 +101,113 @@ hero-content[type="history"] {
   margin-bottom: 10px;
 }
 
+/* INFO: Member Section */
+#members {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.hero-header[type="members"] {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+members-list {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+members-card {
+  display: flex;
+  background: var(--dim-blur);
+  backdrop-filter: blur(20px);
+  background-repeat: repeat;
+  background-position: top;
+  border-radius: 30px;
+}
+
+members-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: var(--dim-no-blur);
+  flex: 0.6;
+  padding: 30px;
+  box-shadow: 
+    10px 0px 0px 0px rgba(36, 36, 36, 0.7), 
+    20px 0px 0px 0px rgba(36, 36, 36, 0.6), 
+    30px 0px 0px 0px rgba(36, 36, 36, 0.5), 
+    40px 0px 0px 0px rgba(36, 36, 36, 0.4), 
+    50px 0px 0px 0px rgba(36, 36, 36, 0.3), 
+    60px 0px 50px -23px rgba(36, 36, 36, 0.2);
+}
+
+members-card-header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+members-card-desc {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+members-card-social-media {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+members-card[type="rainy"] {
+  background-size: 125px;
+  background-image: 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
+    url(./assets/deeplunaria/logo_partern.svg);
+}
+
+members-card[type="pedro"] {
+  background-size: 16rem;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-image: 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
+    url(./assets/performanc/perfc.svg);
+}
+
+members-card[type="lucas"] {
+  background-size: 61px;
+  background-image: 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
+    url(./assets/ecliptia/ecliptia.svg);
+}
+
+
+members-card[type="default"] {
+  background-size: 60px;
+  background-image: 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
+    url(./assets/3rdparty/icons/default_pattern.svg);
+}
+
+/* INFO: Footer Section */
+footer {
+  background-color: var(--dim);
+  opacity: 1;
+  padding: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* INFO: Responsive code section */
 @media (max-width: 1000px) {
-  hero-content {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  hero-content[type="history"] {
-    width: 100%
-  }
-
-  #history {
-    display: block;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
+  /* INFO: Home Section */
   #home {
     display: block;
     height: 100vh;
@@ -114,37 +215,85 @@ hero-content[type="history"] {
     margin-right: 30px;
   }
 
+  hero-content {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .hero-header {
     font-size: 30px;
     margin-bottom: 20px;
   }
 
+  /* INFO: History Section */
   .hero-header[type="history"] {
     font-size: 40px;
+    text-align: center;
+  }
+  
+  #history {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: calc(100% - 20px);
   }
 
   timeline {
-    display: flex;
+    align-items: center;
+    border-left: 0px solid var(--font);
+    margin-left: 0px;
+  }
+
+  timeline-section {
     flex-direction: column;
-    border-left: 5px solid var(--font);
+    column-gap: 15px;
     margin-left: 10px;
-    width: fit-content;
-    margin-bottom: 50px;
   }
 
-  timeline-part {
-    margin-left: 20px;
+  timeline-dot {
+    margin-bottom: 30px;
   }
 
+  timeline-block {
+    width: initial;
+  }
 
-  timeline-part-header {
+  timeline-block-header {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  timeline-part-desc {
+  timeline-block-desc {
     font-size: 15px;
     margin-bottom: 10px;
+  }
+
+  /* INFO: Members Section */
+  #members {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .hero-header[type="members"] {
+    font-size: 40px;
+  }
+
+  members-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* INFO: Last odd item */
+  members-list > members-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 15px);
+    width: 100%;
+    margin: 0 auto;
   }
 }
