@@ -168,21 +168,21 @@ members-card-social-media {
 members-card[type="rainy"] {
   background-size: 125px;
   background-image: 
-    linear-gradient(var(--dim-no-blur), var(--dim-no-blur)), 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
     url(./assets/deeplunaria/logo_partern.svg);
 }
 
 members-card[type="pedro"] {
   background-size: 100px;
   background-image: 
-    linear-gradient(var(--dim-no-blur), var(--dim-no-blur)), 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
     url(./assets/deeplunaria/i_lost_my_mind.svg);
 }
 
 members-card[type="lucas"] {
   background-size: 61px;
   background-image: 
-    linear-gradient(var(--dim-no-blur), var(--dim-no-blur)), 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
     url(./assets/ecliptia/ecliptia.svg);
 }
 
@@ -190,7 +190,7 @@ members-card[type="lucas"] {
 members-card[type="default"] {
   background-size: 60px;
   background-image: 
-    linear-gradient(var(--dim-no-blur), var(--dim-no-blur)), 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
     url(./assets/3rdparty/icons/default_pattern.svg);
 }
 
