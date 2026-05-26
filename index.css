@@ -176,7 +176,7 @@ members-card[type="pedro"] {
   background-size: 100px;
   background-image: 
     linear-gradient(var(--dim-blur), var(--dim-blur)), 
-    url(./assets/deeplunaria/i_lost_my_mind.svg);
+    url(./assets/deeplunaria/silly_pedro.svg);
 }
 
 members-card[type="lucas"] {
