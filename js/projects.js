@@ -25,7 +25,7 @@
     return;
   }
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     const repo = projects_array[i];
     const project_card_a = document.createElement('a')
     project_card_a.setAttribute('target', '_blank')
