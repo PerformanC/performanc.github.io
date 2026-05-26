@@ -63,7 +63,8 @@
       a_link_tag.appendChild(a_link_icon)
       members_card_social_media.appendChild(a_link_tag)
     }
-
+    
+    members_card_wrapper.appendChild(members_card_social_media)
     members_card.appendChild(members_card_wrapper)
     members_list_tag.appendChild(members_card)
   }
