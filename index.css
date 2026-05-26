@@ -126,7 +126,7 @@ members-list {
 
 members-card {
   display: flex;
-  background: var(--dim-blur);
+  background: var(--dim-no-blur);
   backdrop-filter: blur(20px);
   background-repeat: repeat;
   background-position: top;
@@ -186,12 +186,18 @@ members-card[type="lucas"] {
     url(./assets/ecliptia/ecliptia.svg);
 }
 
-
-members-card[type="default"] {
-  background-size: 60px;
+members-card[type="tehpig"] {
+  background-size: 125px;
   background-image: 
     linear-gradient(var(--dim-blur), var(--dim-blur)), 
-    url(./assets/3rdparty/icons/default_pattern.svg);
+    url(./assets/deeplunaria/teh_pig_pattern.svg);
+}
+
+members-card[type="nicolas"] {
+  background-size: 125px;
+  background-image: 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
+    url(./assets/deeplunaria/nicolas_pattern.svg);
 }
 
 /* INFO: Footer Section */
