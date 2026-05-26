@@ -272,6 +272,21 @@ footer {
   padding: 30px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer-icons {
+  display: flex;
+  align-items: center;
+  /* row-gap: 20px; */
+  margin-bottom: 10px;
+}
+
+footer-icons p {
+  margin-left: 15px;
+  margin-right: 8px;
 }
 
 
@@ -408,6 +423,13 @@ no-data-card-desc {
       0px -40px 0px 0px rgba(36, 36, 36, 0.4), 
       0px -50px 0px 0px rgba(36, 36, 36, 0.3), 
       0px -60px 50px -23px rgba(36, 36, 36, 0.2);
+  }
+
+  /* INFO: Footer Section */
+  footer {
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
   }
 }
 
