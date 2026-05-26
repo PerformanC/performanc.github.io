@@ -1,0 +1,85 @@
+[
+  {
+    "banner_type": "pedro",
+    "name": "ThePedroo",
+    "desc": "Howdy, I am a 17-year-old boy from Brazil. I have been into programming since I was 11 years old, beginning with JavaScript (Node.js).",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/ThePedroo"
+      },
+      {
+        "type": "discord",
+        "link": "https://discord.gg/uPveNfTuCJ"
+      },
+      {
+        "type": "telegram",
+        "link": "https://t.me/performancorg"
+      }
+    ]
+  },
+  {
+    "banner_type": "rainy",
+    "name": "RainyXeon",
+    "desc": "I'm RainyXeon (just call me Rainy), a full-stack developer from Vietnam. I started my coding journey in the mid-2020s with one dream: to build and share useful open-source tools.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/RainyXeon"
+      },
+      {
+        "type": "discord",
+        "link": "https://discord.gg/kwEmpMExmv"
+      },
+      {
+        "type": "telegram",
+        "link": "https://t.me/DeepLunaria"
+      },
+      {
+        "type": "bluesky",
+        "link": "https://bsky.app/profile/rainyxeon.bsky.social"
+      }
+    ]
+  },
+  {
+    "banner_type": "lucas",
+    "name": "1Lucas1apk",
+    "desc": "Hi! I'm Lucas Morais Rodrigues (a.k.a. 1Lucas1apk), born on 03/06. At 18, I'm a curious and creative soul with a passion for solving problems, building meaningful projects, and constantly exploring new horizons—both in tech and life.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/1Lucas1apk"
+      },
+      {
+        "type": "discord",
+        "link": "https://discord.gg/fzjksWS65v"
+      }
+    ]
+  },
+  {
+    "banner_type": "nicolas",
+    "name": "Nicolas De Sá (TheToddyn)",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat, lorem id iaculis cursus, est arcu congue mauris, ut tincidunt lectus lorem et nisi. Ut varius cursus interdum. ",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/TheToddyn"
+      }
+    ]
+  },
+  {
+    "banner_type": "tehpig",
+    "name": "TehPig",
+    "desc": "Hi , I'm TehPig. I am currently working on APIs and mostly JavaScript projects. I own 2 Verified Discord Bots, [T_Moderator_Bot] (180+ servers) and [T_Music_Bot] (2.5k+ servers), serving users daily with new features implemented every once in a while!",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/TehPig"
+      },
+      {
+        "type": "bluesky",
+        "link": "https://bsky.app/profile/techpig.tehcraft.xyz"
+      }
+    ]
+  }
+]

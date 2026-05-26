@@ -101,13 +101,71 @@ timeline-block-desc a:active {
   margin-bottom: 10px;
 }
 
+/* INFO: Projects Section */
+#projects {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.hero-header[type="projects"] {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+projects-list {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+projects-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--dim-blur);
+  backdrop-filter: blur(20px);
+  background-repeat: repeat;
+  background-position: top;
+  border-radius: 30px;
+  padding: 35px;
+}
+
+projects-card-header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+projects-card-desc {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+projects-card-count {
+  margin-top: 15px;
+  display: flex;
+}
+
+projects-card-forks {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+projects-card-stargazers {
+  font-size: 18px;
+}
+
 /* INFO: Member Section */
 #members {
   display: block;
   margin-top: 100px;
   margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .hero-header[type="members"] {
@@ -200,6 +258,13 @@ members-card[type="nicolas"] {
     url(./assets/deeplunaria/nicolas_pattern.svg);
 }
 
+members-card[type="default"] {
+  background-size: 60px;
+  background-image: 
+    linear-gradient(var(--dim-blur), var(--dim-blur)), 
+    url(./assets/3rdparty/icons/default_pattern.svg);
+}
+
 /* INFO: Footer Section */
 footer {
   background-color: var(--dim);
@@ -208,6 +273,30 @@ footer {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+
+
+/* INFO: No data card */
+no-data-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--dim-blur);
+  backdrop-filter: blur(20px);
+  background-repeat: repeat;
+  background-position: top;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+no-data-card-header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+no-data-card-desc {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 
 /* INFO: Responsive code section */
 @media (max-width: 1000px) {
@@ -274,6 +363,19 @@ footer {
     margin-bottom: 10px;
   }
 
+  /* INFO: Projects Section */
+  #projects {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  projects-list {
+    grid-template-columns: 1fr;
+  }
+
   /* INFO: Members Section */
   #members {
     display: block;
@@ -316,5 +418,22 @@ footer {
     max-width: calc(50% - 15px);
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  projects-card-count {
+    flex-direction: column;
+    column-gap: 20px;
+  }
+
+  projects-card-forks {
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+
+  projects-card-stargazers {
+    font-size: 18px;
   }
 }
