@@ -2,8 +2,8 @@
   display: block;
   margin-top: 150px;
   margin-bottom: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .section-header {
@@ -112,18 +112,7 @@ timeline-block-desc a:active {
   text-decoration: underline;
 }
 
-.hero-header[type="history"] {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
 /* INFO: Projects Section */
-.hero-header[type="projects"] {
-  font-size: 50px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
 projects-list {
   display: grid;
   margin-top: 30px;
@@ -168,12 +157,6 @@ projects-card-stargazers {
 }
 
 /* INFO: Member Section */
-.hero-header[type="members"] {
-  font-size: 50px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
 members-list {
   display: grid;
   margin-top: 30px;
@@ -265,6 +248,42 @@ members-card[type="default"] {
     url(./assets/3rdparty/icons/default_pattern.svg);
 }
 
+/* INFO: Social Media Section */
+#social_media {
+  margin-bottom: 100px;
+}
+
+social-media-list {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+social-media-card {
+  display: flex;
+  align-items: center;
+  background: var(--dim-blur);
+  backdrop-filter: blur(20px);
+  background-repeat: repeat;
+  background-position: top;
+  border-radius: 30px;
+  padding: 35px;
+}
+
+social-media-card-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+social-media-card-icon {
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid var(--font);
+  margin-right: 10px;
+}
+
 /* INFO: Footer Section */
 footer {
   background-color: var(--dim);
@@ -312,7 +331,6 @@ no-data-card-desc {
   margin-top: 10px;
 }
 
-
 /* INFO: Responsive code section */
 @media (max-width: 1000px) {
   .section-header {
@@ -344,7 +362,6 @@ no-data-card-desc {
   }
 
   /* INFO: History Section */
-
   #history {
     margin-left: 20px;
     margin-top: 50px;
@@ -430,6 +447,20 @@ no-data-card-desc {
       0px -60px 50px -23px rgba(36, 36, 36, 0.2);
   }
 
+  /* INFO: Projects Section */
+  #social_media {
+    display: block;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  social-media-list {
+    grid-template-columns: 1fr;
+  }
+
+
   /* INFO: Footer Section */
   footer {
     align-items: center;
@@ -441,6 +472,13 @@ no-data-card-desc {
 @media (min-width: 1000px) {
   /* INFO: Last odd item */
   members-list > members-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 15px);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  social-media-list > social-media-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
     max-width: calc(50% - 15px);
     width: 100%;
