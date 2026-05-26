@@ -1,3 +1,27 @@
+.section {
+  display: block;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.section-header {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+section-dot {
+  display: none;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--font);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
 /* INFO: Home Section */
 #home {
   display: block;
@@ -22,14 +46,6 @@ hero-content {
 }
 
 /* INFO: History Section */
-#history {
-  display: block;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 timeline {
   display: flex;
   flex-direction: column;
@@ -102,14 +118,6 @@ timeline-block-desc a:active {
 }
 
 /* INFO: Projects Section */
-#projects {
-  display: block;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
 .hero-header[type="projects"] {
   font-size: 50px;
   margin-bottom: 10px;
@@ -160,14 +168,6 @@ projects-card-stargazers {
 }
 
 /* INFO: Member Section */
-#members {
-  display: block;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
 .hero-header[type="members"] {
   font-size: 50px;
   margin-bottom: 10px;
@@ -315,6 +315,15 @@ no-data-card-desc {
 
 /* INFO: Responsive code section */
 @media (max-width: 1000px) {
+  .section-header {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  section-dot {
+    display: block;
+  }
+
   /* INFO: Home Section */
   #home {
     display: block;
@@ -335,11 +344,7 @@ no-data-card-desc {
   }
 
   /* INFO: History Section */
-  .hero-header[type="history"] {
-    font-size: 40px;
-    text-align: center;
-  }
-  
+
   #history {
     margin-left: 20px;
     margin-top: 50px;
