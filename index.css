@@ -280,7 +280,7 @@ social-media-card-header {
 social-media-card-icon {
   border-radius: 50%;
   padding: 5px;
-  border: 1px solid var(--font);
+  border: 3px solid var(--font);
   margin-right: 10px;
 }
 
