@@ -332,6 +332,13 @@ no-data-card-desc {
 }
 
 /* INFO: Responsive code section */
+@media (max-width: 1300px) {
+  .section {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
 @media (max-width: 1000px) {
   .section-header {
     font-size: 40px;
@@ -478,7 +485,7 @@ no-data-card-desc {
     margin: 0 auto;
   }
 
-  social-media-list > social-media-card:last-child:nth-child(odd) {
+  social-media-list > a:last-child:nth-child(odd) {
     grid-column: 1 / -1;
     max-width: calc(50% - 15px);
     width: 100%;
