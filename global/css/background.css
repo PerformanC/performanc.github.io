@@ -49,7 +49,6 @@ background-circle {
 
   /* base look */
   opacity: 0.18;
-  backdrop-filter: blur(10px);
 
   /* animation vars */
   --scale: 1;
@@ -64,20 +63,17 @@ background-circle {
 
 /* Far (small, faint, slow) */
 .depth-far {
-  backdrop-filter: blur(25px);
   opacity: 0.10;
   animation-duration: calc(var(--duration, 20s) * 1.4);
 }
 
 /* Mid (default) */
 .depth-mid {
-  backdrop-filter: blur(15px);
   opacity: 0.16;
 }
 
 /* Near (big, sharper, faster) */
 .depth-near {
-  backdrop-filter: blur(6px);
   opacity: 0.22;
   animation-duration: calc(var(--duration, 20s) * 0.8);
 }
