@@ -85,6 +85,17 @@ github-icon {
   height: 30px;
 }
 
+email-icon {
+  background-image: url(./3rdparty/icons/email.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
 telegram-icon {
   background-image: url(./3rdparty/icons/telegram.svg);
   background-position: center;
