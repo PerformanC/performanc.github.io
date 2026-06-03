@@ -465,6 +465,7 @@ no-data-card-desc {
 
   social-media-list {
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 
 
