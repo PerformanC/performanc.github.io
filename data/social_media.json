@@ -1,0 +1,32 @@
+[
+  {
+    "id": "discord",     
+    "name": "Join Discord community!",
+    "link": "https://discord.performanc.org"
+  },
+  {
+    "id": "github",     
+    "name": "Check out PerformanC Github!",
+    "link": "https://github.com/PerformanC"
+  },
+  {
+    "id": "telegram",     
+    "name": "Join Telegram official community!",
+    "link": "https://t.me/performancorg_channel"
+  },
+  {
+    "id": "telegram",     
+    "name": "Join Telegram community!",
+    "link": "https://t.me/performancorg"
+  },
+  {
+    "id": "email",     
+    "name": "Contact via email: contact@performanc.org",
+    "link": "mailto:contact@performanc.org"
+  },
+  {
+    "id": "signal",     
+    "name": "Join Signal community!",
+    "link": "https://signal.performanc.org"
+  }
+]

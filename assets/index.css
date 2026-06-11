@@ -106,3 +106,14 @@ telegram-icon {
   width: 30px;
   height: 30px;
 }
+
+signal-icon {
+  background-image: url(./3rdparty/icons/signal.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
