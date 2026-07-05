@@ -22,6 +22,16 @@ section-dot {
   aspect-ratio: 1/1;
 }
 
+.redacted-content {
+  background-color: var(--background);
+  border-radius: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 14px;
+}
+
 /* INFO: Home Section */
 #home {
   display: block;

@@ -36,6 +36,11 @@
       social_media_string = '<members-card-social-media>' + social_media_link_string + '</members-card-social-media>'
     }
 
+    if (data.desc.includes('[[REDACTED]]')) {
+      const splited_desc = /(.*)\[\[REDACTED\]\](.*)/.exec(data.desc)
+      data.desc = splited_desc[1] + '<code class="redacted-content">REDACTED</code>' +  splited_desc[2]
+    }
+
     members_list_tag.innerHTML += `
       <members-card type="${accepted_banner_type.includes(data.banner_type) ? data.banner_type : 'default'}">
         <members-card-wrapper>
