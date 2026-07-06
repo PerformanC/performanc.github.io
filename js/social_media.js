@@ -4,7 +4,7 @@
 
   if (!social_media_fetch.ok) {
     document.getElementById('social_media').innerHTML += `
-      <a target="_blank" href="https://github.com/PerformanC/Website/issues" alt="https://github.com/PerformanC/Website/issues">
+      <a target="_blank" href="https://github.com/PerformanC/Website/issues" alt="https://github.com/PerformanC/Website/issues" aria-label="https://github.com/PerformanC/Website/issues">
         <no-data-card>
           <no-data-card-header>No data avaliable!</no-data-card-header>
           <no-data-card-desc>No data avaliable! Please click this card to go to issue page and report!</no-data-card-desc>
@@ -20,7 +20,7 @@
     const data = social_media_array[i];
 
     social_media_list_tag.innerHTML += `
-      <a href="${data.link}" alt="${data.id}_social_media" target="_blank">
+      <a href="${data.link}" aria-label="${data.id}_social_media" alt="${data.id}_social_media" target="_blank">
         <social-media-card>
           <social-media-card-icon>
             <${data.id}-icon></${data.id}-icon>

@@ -5,7 +5,7 @@
 
   if (!members_fetch.ok) {
     document.getElementById('members').innerHTML += `
-      <a target="_blank" href="https://github.com/PerformanC/Website/issues" alt="https://github.com/PerformanC/Website/issues">
+      <a target="_blank" href="https://github.com/PerformanC/Website/issues" alt="https://github.com/PerformanC/Website/issues" aria-label="https://github.com/PerformanC/Website/issues">
         <no-data-card>
           <no-data-card-header>No data avaliable!</no-data-card-header>
           <no-data-card-desc>No data avaliable! Please click this card to go to issue page and report!</no-data-card-desc>
@@ -27,7 +27,7 @@
       for (let i = 0; i < data.social_media.length; i++) {
         const social_media_data = data.social_media[i]
         social_media_link_string += `
-          <a target="_blank" href="${social_media_data.link}" alt="${social_media_data.type}">
+          <a target="_blank" href="${social_media_data.link}" alt="${social_media_data.type}" aria-label="${social_media_data.type}">
             <${social_media_data.type}-icon></${social_media_data.type}-icon>
           </a>
         `

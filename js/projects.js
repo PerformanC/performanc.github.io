@@ -6,7 +6,7 @@
 
   if (!projects_fetch.ok) {
     document.getElementById('projects').innerHTML += `
-      <a target="_blank" href="https://github.com/PerformanC/Website/issues" alt="https://github.com/PerformanC/Website/issues">
+      <a target="_blank" href="https://github.com/PerformanC/Website/issues" alt="https://github.com/PerformanC/Website/issues" aria-label="https://github.com/PerformanC/Website/issues">
         <no-data-card>
           <no-data-card-header>No data avaliable!</no-data-card-header>
           <no-data-card-desc>No data avaliable! Please click this card to go to issue page and report!</no-data-card-desc>
@@ -19,7 +19,7 @@
   for (let i = 0; i < 6; i++) {
     const repo = projects_array[i];
     projects_list_tag.innerHTML += `
-      <a target="_blank" href="${repo.html_url}" alt="Github projject: ${repo.name}">
+      <a target="_blank" href="${repo.html_url}" alt="Github project: ${repo.name}" aria-label="Github project: ${repo.name}">
         <projects-card>
           <projects-card-header>${repo.name}</projects-card-header>
           <projects-card-desc>${repo.description}</projects-card-desc>
