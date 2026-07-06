@@ -1,0 +1,119 @@
+@import url(/assets/3rdparty/fonts/index.css);
+
+deeplunaria-icon {
+  background-image: url(./deeplunaria/original.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 65px;
+  height: 65px;
+}
+
+performanc-icon {
+  background-image: url(./performanc/perfc.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+framed-performanc-icon {
+  background-image: url(./performanc/framed_perfc.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 55px;
+  height: 55px;
+}
+
+ecliptia-icon {
+  background-image: url(./ecliptia/ecliptia.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+menu-icon {
+  background-image: url(./3rdparty/icons/menu.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+}
+
+discord-icon {
+  background-image: url(./3rdparty/icons/discord.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+bluesky-icon {
+  background-image: url(./3rdparty/icons/bluesky.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+github-icon {
+  background-image: url(./3rdparty/icons/github.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+email-icon {
+  background-image: url(./3rdparty/icons/email.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+telegram-icon {
+  background-image: url(./3rdparty/icons/telegram.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+signal-icon {
+  background-image: url(./3rdparty/icons/signal.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 30px;
+  height: 30px;
+}

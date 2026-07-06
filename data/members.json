@@ -1,0 +1,85 @@
+[
+  {
+    "banner_type": "pedro",
+    "name": "ThePedroo",
+    "desc": "Pedro is a 17 years old C and JavaScript programmer at Brazil. Loving FOSS, created PerformanC, and as of the time, maintains the majority of the projects.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/ThePedroo"
+      },
+      {
+        "type": "discord",
+        "link": "https://discord.gg/uPveNfTuCJ"
+      },
+      {
+        "type": "telegram",
+        "link": "https://t.me/performancorg"
+      }
+    ]
+  },
+  {
+    "banner_type": "rainy",
+    "name": "RainyXeon",
+    "desc": "RainyXeon, also known as Rainy, is a 18 years old programmer from Vietnam. The musicomanic, programming for almost 7 years, is an Android developer, a Discord bot developer, and a front-end developer. As of the time, maintaining ReZygisk.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/RainyXeon"
+      },
+      {
+        "type": "discord",
+        "link": "https://discord.gg/kwEmpMExmv"
+      },
+      {
+        "type": "telegram",
+        "link": "https://t.me/DeepLunaria"
+      },
+      {
+        "type": "bluesky",
+        "link": "https://bsky.app/profile/rainyxeon.bsky.social"
+      }
+    ]
+  },
+  {
+    "banner_type": "lucas",
+    "name": "1Lucas1apk",
+    "desc": "Lucas, a 18 years old boy, born at Brazil, is a TypeScript, JavaScript, Java and Python developer. Currently, the music lover is a maintaining NodeLink and the related projects.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/1Lucas1apk"
+      },
+      {
+        "type": "discord",
+        "link": "https://discord.gg/fzjksWS65v"
+      }
+    ]
+  },
+  {
+    "banner_type": "nicolas",
+    "name": "Nicolas De Sá (TheToddyn)",
+    "desc": "Nicolas, a brazilian 19 years old programmer. Learning JavaScript and Python, the brazilian has been trying to get to know the programming world.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/TheToddyn"
+      }
+    ]
+  },
+  {
+    "banner_type": "tehpig",
+    "name": "TehPig",
+    "desc": "TehPig is a [[REDACTED]] years old programmer. Knowing JavaScript, TehPig is mainly known for his Discord bots: T bots, being the most famous one out of the two the T Music Bot. However, aside from bots, the YouTuber also creates APIs and Minecraft servers.",
+    "social_media": [
+      {
+        "type": "github",
+        "link": "https://github.com/TehPig"
+      },
+      {
+        "type": "bluesky",
+        "link": "https://bsky.app/profile/techpig.tehcraft.xyz"
+      }
+    ]
+  }
+]

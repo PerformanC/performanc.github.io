@@ -4,30 +4,194 @@
     <!-- INFO: Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PerfomanC</title>
-    <meta name="description" content="For a more transparent world. Por um mundo mais transparente">
+    <title>PerformanC</title>
+    <meta name="description" content="Working for the best of the future">
     <meta name="robots" content="index, follow">
     <meta http-equiv="content-language" content="en">
     <meta name="author" content="PerformanC">
     <!-- INFO: Open Graph Metadata -->
     <meta property="og:title" content="PerfomanC">
-    <meta property="og:description" content="For a more transparent world. Por um mundo mais transparente">
-    <!-- <meta property="og:image" content="https://deepinrain.github.io/assets/favicon.img"> -->
+    <meta property="og:description" content="Working for the best of the future">
+    <meta property="og:image" content="https://performanc.org/assets/performanc/logo.png">
     <meta property="og:url" content="https://performanc.org/">
     <meta property="og:type" content="website">
     <!-- INFO: Twitter Card Metadata -->
     <meta name="twitter:title" content="PerfomanC">
-    <meta name="twitter:description" content="For a more transparent world. Por um mundo mais transparente">
-    <!-- <meta name="twitter:image" content="https://deepinrain.github.io/assets/favicon.img"> -->
+    <meta name="twitter:description" content="Working for the best of the future">
+    <meta name="twitter:image" content="https://performanc.org/assets/performanc/logo.png">
     <!--INFO: Links -->
+    <link rel="icon" type="image/png" href="/assets/performanc/favicon.png">
     <link rel="canonical" href="https://performanc.org/">
+    <link rel="stylesheet" href="/global/css/gui-toolkit.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <!-- INFO: Scripts -->
+    <script type="module" src="/js/preloader.js"></script>
+    <script type="module" src="/js/members.js"></script>
+    <script type="module" src="/js/projects.js"></script>
+    <script type="module" src="/js/social_media.js"></script>
   </head>
   <body>
-    <h1>PerformanC</h1>
-    <p>This website is <strong>under construction</strong>. It will display a full website when it's done.</p>
-    <p>This website will serves as an official website information of the org, history, projects, developers, log upload, contacts, social media</p>
-    <p>Well see you guys later :D</p>
-    <p><strong>RainyXeon - Member of PerfomanC Organization</strong></p>
-    <p style="color: white;"></p>
+    <background>
+      <background-circle class="circle-1 depth-far"></background-circle>
+      <background-circle class="circle-2 depth-mid"></background-circle>
+      <background-circle class="circle-3 depth-near"></background-circle>
+      <background-circle class="circle-4 depth-far"></background-circle>
+      <background-circle class="circle-5 depth-mid"></background-circle>
+      <background-circle class="circle-6 depth-near"></background-circle>
+      <background-circle class="circle-7 depth-far"></background-circle>
+      <background-circle class="circle-8 depth-mid"></background-circle>
+      <background-circle class="circle-9 depth-near"></background-circle>
+      <background-circle class="circle-10 depth-far"></background-circle>
+      <background-circle class="circle-11 depth-mid"></background-circle>
+      <background-circle class="circle-12 depth-near"></background-circle>
+      <background-circle class="circle-13 depth-far"></background-circle>
+    </background>
+
+    <div id="menu">
+      <menu-modal>
+        <a alt="home" class="menu-modal-item mmi-can-close" href="#">Home</a>
+        <a alt="history" class="menu-modal-item mmi-can-close" href="#history">History</a>
+        <a alt="projects" class="menu-modal-item mmi-can-close" href="#projects">Projects</a>
+        <a alt="member" class="menu-modal-item mmi-can-close" href="#members">Member</a>
+        <a alt="social_media" class="menu-modal-item mmi-can-close" href="#social_media">Social Media</a>
+        <a alt="close" class="menu-modal-item mmi-can-close" id="menu-close-button">Close</a>
+      </menu-modal>
+    </div>
+
+    <nav-constructor>
+      <nav id="nav-brand">
+        <a alt="home" href="#"><nav-item class="icon"></nav-item></a>
+        <a alt="home" href="#"><nav-item id="nav-brand-name">PerformanC</nav-item></a>
+        <nav-item id="nav-menu-button" logo-checked>
+          <menu-icon></menu-icon>
+        </nav-item>
+      </nav>
+      <nav id="nav-button">
+        <a alt="home" href="#">Home</a>
+        <a alt="history" href="#history">History</a>
+        <a alt="projects" href="#projects">Projects</a>
+        <a alt="members" href="#members">Members</a>
+        <a alt="social_media" href="#social_media">Social Media</a>
+      </nav>
+    </nav-constructor>
+
+    <div id="home">
+      <hero-section>
+        <hero-content>
+          <h1 class="hero-header">Workforce towards the commonwealth</h1>
+          <p style="font-size: 20px;">
+            Empowering a workforce for the commonwealth, 
+            we build systems rooted in transparency, trust, and shared purpose. 
+            By opening access and fostering accountability, 
+            we help create a more connected, equitable world where progress is shared by all.
+          </p>
+        </hero-content>
+      </hero-section>
+    </div>
+
+    <div id="history" class="section">
+      <h2 class="section-header">Our History</h2>
+      <timeline>
+        <timeline-section style="margin-top: 15px;">
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>2022 — Foundation</timeline-block-header>
+            <timeline-block-desc>
+              Born in the aftermath of the COVID-19 pandemic, The PerformanC Organization (TPO) was established with a clear vision:
+              to build and publish high-quality software that prioritizes performance, efficiency, and minimal resource usage.
+            </timeline-block-desc>
+            <timeline-block-desc>
+              From the very beginning, the organization committed to something deeper than just code, 
+              transparency, and accountability at every step of development.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+        <timeline-section>
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>First Release — CogLink</timeline-block-header>
+            <timeline-block-desc>The first project released under the organization marked its technical direction.</timeline-block-desc>
+            <timeline-block-desc>
+              CogLink, a LavaLink client written in C99, became the foundation of PerformanC’s identity—
+              lean, efficient, and engineered with precision.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+        <timeline-section>
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>Growth — Expanding the Ecosystem</timeline-block-header>
+            <timeline-block-desc>As time progressed, PerformanC continued to grow beyond its initial scope.</timeline-block-desc>
+            <timeline-block-desc>More projects were developed and released, each carrying the same philosophy:</timeline-block-desc>
+            <timeline-block-desc>
+              <ul>
+                <li>performance-first design</li>
+                <li>clean and reliable implementation</li>
+                <li>practical value for real-world use</li>
+              </ul>
+            </timeline-block-desc>
+            <timeline-block-desc>
+              Some of these projects began gaining traction, gradually building recognition within the community.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+        <timeline-section style="margin-bottom: 0;">
+          <timeline-dot></timeline-dot>
+          <timeline-block>
+            <timeline-block-header>Today — A Global Effort</timeline-block-header>
+            <timeline-block-desc>Today, PerformanC stands as a collaborative effort formed by:</timeline-block-desc>
+            <timeline-block-desc>
+              <a alt="lucas_link" href="https://github.com/1Lucas1apk" target="_blank">Lucas</a>, 
+              <a alt="rainy_link" href="https://deeplunaria.pages.dev/rainyxeon/" target="_blank">Rainy</a>, 
+              <a alt="tehpig_link" href="https://github.com/TehPig" target="_blank">TehPig</a>, 
+              <a alt="pedro_link" href="https://github.com/ThePedroo" target="_blank">ThePedroo</a>, and 
+              <a alt="nicolas_link" href="https://github.com/TheToddyn" target="_blank">Nicolas</a>
+            </timeline-block-desc>
+            <timeline-block-desc>
+              With 10+ active projects, the organization delivers high-standard 
+              software used by individuals and other projects across the globe.
+            </timeline-block-desc>
+          </timeline-block>
+        </timeline-section>
+      </timeline>
+    </div>
+
+    <div id="projects" class="section">
+      <h2 class="section-header">Our Projects</h2>
+      <section-dot></section-dot>
+      <projects-list id="projects-list">
+        <!-- INFO: data will dynamically load here -->
+      </projects-list>
+    </div>
+
+    <div id="members" class="section">
+      <h2 class="section-header">Our Members</h2>
+      <section-dot></section-dot>
+      <members-list id="members_list">
+        <!-- INFO: data will dynamically load here -->
+      </members-list>
+    </div>
+
+    <div id="social_media" class="section">
+      <h2 class="section-header">Social Media</h2>
+      <section-dot></section-dot>
+      <social-media-list id="social-media-list">
+        <!-- INFO: data will dynamically load here -->
+      </social-media-list>
+    </div>
+
+    <footer id="footer">
+      <footer-text>
+        <a alt="license_link" id="copyright_notice" href="/LICENSE" target="_blank"></a>
+        <br>
+        <a alt="notice_link" href="/assets/NOTICE.md" target="_blank">Assets used in <b>/assets/performanc</b> are licensed under the "CC BY-NC-ND 4.0" License </a>
+      </footer-text>
+
+      <footer-icons>
+        <framed-performanc-icon></framed-performanc-icon>
+        <p>X</p>
+        <deeplunaria-icon></deeplunaria-icon>
+      </footer-icons>
+    </footer>
   </body>
 </html>

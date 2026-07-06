@@ -1,0 +1,102 @@
+nav-constructor {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  right: 0;
+  z-index: 20;
+}
+
+nav {
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dim-blur);
+  backdrop-filter: blur(10px);
+}
+
+nav-item {
+  margin: 10px;
+  padding: 13px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+nav[id="nav-button"] a {
+  margin: 10px;
+  padding: 13px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.icon {
+  background-image: url(/assets/performanc/favicon.png);
+  display: block;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--bright);
+}
+
+nav-item[logo-checked] {
+  background-color: var(--bright);
+  backdrop-filter: blur(10px);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nav-brand {
+  margin-right: 20px;
+}
+
+#nav-brand-name {
+  background-color: var(--bright);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#nav-menu-button {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  nav-constructor {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    right: 0;
+  }
+  #nav-button {
+    display: none;
+  }
+
+  nav-constructor {
+    left: 0px;
+    right: 0px;
+  }
+
+  nav {
+    scale: 0.9;
+  }
+
+  #nav-brand {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #nav-brand-name {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: initial;
+  }
+
+  #nav-menu-button {
+    display: block;
+  }
+}
